@@ -1,0 +1,26 @@
+{
+  "name": "eestec-discord-bot",
+  "version": "1.0.0",
+  "description": "Bot for EESTEC LC Skopje's discord server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eestec-sk/EESTEC-Discord-Bot.git"
+  },
+  "keywords": [
+    "eestec"
+  ],
+  "author": "Novica Paunovski, Petar Hristovski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eestec-sk/EESTEC-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/eestec-sk/EESTEC-Discord-Bot#readme",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
+  }
+}
