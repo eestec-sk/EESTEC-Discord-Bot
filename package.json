@@ -5,7 +5,7 @@
   "main": "src/main.ts",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "dev": "nodemon",
+    "dev": "rimraf dist && tsc && node dist/main.js",
     "start": "node dist/main.js"
   },
   "repository": {
