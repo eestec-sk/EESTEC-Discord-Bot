@@ -42,7 +42,6 @@ export const getButtonCommand = (command?: string) => {
 };
 
 // eslint-disable-next-line complexity
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const getButtonInfo = (
   interaction: ButtonInteraction,
   command: string,
