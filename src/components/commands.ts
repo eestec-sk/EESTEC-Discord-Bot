@@ -1,4 +1,5 @@
 import { aboutMessage, botName } from '../data/about.js';
+import { pingMessage } from '../data/ping.js';
 import { commandDescriptions } from '../data/commands.js';
 import { commandMention } from '../utilities/commands.js';
 import { embedMessages } from '../data/embeds.js';
@@ -15,6 +16,16 @@ export const getAboutEmbed = async () => {
       .setColor(constants.eestecRed as ColorResolvable)
       .setDescription(
         aboutMessage(commandMention('help')),
+      )
+      .setTimestamp();
+  };
+
+  export const getPingEmbed = async () => {
+    return new EmbedBuilder()
+      .setTitle("PING")
+      .setColor(constants.eestecRed as ColorResolvable)
+      .setDescription(
+        pingMessage(commandMention('ping')),
       )
       .setTimestamp();
   };
@@ -46,3 +57,4 @@ export const getHelpEmbed = async (
       })
       .setTimestamp();
   };
+

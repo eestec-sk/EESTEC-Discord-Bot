@@ -1,3 +1,3 @@
 export const constants = {
-    eestecRed: '#E50200',
+    eestecRed: '#E52A30',
 }
