@@ -1,6 +1,5 @@
 import { aboutMessage, botName } from '../data/about.js';
-import { pingMessage } from '../data/ping.js';
-import { currentBoardMessage } from '../data/currentBoard.js';
+import { boardInfoMessages } from '../data/boardinfo.js';
 import { commandDescriptions } from '../data/commands.js';
 import { commandMention } from '../utilities/commands.js';
 import { embedMessages } from '../data/embeds.js';
@@ -21,22 +20,12 @@ export const getAboutEmbed = async () => {
       .setTimestamp();
   };
 
-  export const getPingEmbed = async () => {
+  export const getCurrentBoardInfoEmbed = async () => {
     return new EmbedBuilder()
-      .setTitle("PING")
+      .setTitle("Информации за тековниот борд")
       .setColor(constants.eestecRed as ColorResolvable)
       .setDescription(
-        pingMessage(commandMention('ping')),
-      )
-      .setTimestamp();
-  };
-
-  export const getCurrentBoardEmbed = async () => {
-    return new EmbedBuilder()
-      .setTitle("PING")
-      .setColor(constants.eestecRed as ColorResolvable)
-      .setDescription(
-        currentBoardMessage(commandMention('boardinfo')),
+        boardInfoMessages.currentBoard
       )
       .setTimestamp();
   };

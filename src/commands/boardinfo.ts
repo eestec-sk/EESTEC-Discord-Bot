@@ -1,11 +1,11 @@
-import { getPingEmbed } from '../components/commands.js';
+import { getCurrentBoardInfoEmbed } from '../components/commands.js';
 import { commandDescriptions } from '../data/commands.js';
 import {
   type ChatInputCommandInteraction,
   SlashCommandBuilder,
 } from 'discord.js';
 
-const name = 'ping';
+const name = 'boardinfo';
 
 export const data = new SlashCommandBuilder()
   .setName(name)
@@ -13,7 +13,7 @@ export const data = new SlashCommandBuilder()
 
 export const execute = async (interaction: ChatInputCommandInteraction) => {
 
-  const embed = await getPingEmbed();
+  const embed = await getCurrentBoardInfoEmbed();
   await interaction.editReply({
     embeds: [embed],
   });
