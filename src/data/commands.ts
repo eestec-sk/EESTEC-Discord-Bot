@@ -1,6 +1,7 @@
   export const commandDescriptions = {
     about: 'За Discord ботот',
     help: 'Преземи листа од сите достапни команди',
+    boardinfo: 'Преземи информации за тековен борд',
   };
   
   export const commandResponses = {
